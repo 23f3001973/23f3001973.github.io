@@ -33,9 +33,19 @@ style: |
   }
   
   section.image-bg {
-    background-image: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1200&h=675&fit=crop');
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&crop=entropy&cs=tinysrgb');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  
+  section.tech-bg {
+    background-image: url('https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1920&h=1080&fit=crop&crop=entropy&cs=tinysrgb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
   }
