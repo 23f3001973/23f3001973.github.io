@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Earnings Presentation - Atin Datta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS Core -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css">
+
+    <!-- Code Highlight Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title Slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p><strong>Prepared by:</strong> Atin Datta</p>
+          <p><strong>Email:</strong> 23f3001973@ds.study.iitm.ac.in</p>
+          <aside class="notes">
+            Welcome the audience. Mention your name, role, and that this is an interactive report.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ## 📊 Key Highlights
+            - Revenue growth: **15% YoY**
+            - Net Profit: **₹120 Cr**
+            - EPS: **₹25.4**
+          </textarea>
+          <aside class="notes">
+            Summarize the financial highlights concisely for a quick overview.
+          </aside>
+        </section>
+
+        <!-- Fragments for animation -->
+        <section>
+          <h2>Revenue Breakdown</h2>
+          <ul>
+            <li class="fragment">Retail Banking: 40%</li>
+            <li class="fragment">Corporate Banking: 35%</li>
+            <li class="fragment">Wealth Management: 25%</li>
+          </ul>
+          <aside class="notes">
+            Reveal each revenue segment step by step for clarity.
+          </aside>
+        </section>
+
+        <!-- Code Highlighting -->
+        <section>
+          <h2>Python Analysis</h2>
+          <pre><code class="language-python">
+import pandas as pd
+
+data = {"Q1": [120], "Q2": [135], "Q3": [150], "Q4": [160]}
+df = pd.DataFrame(data)
+print("Annual Revenue:", df.sum().sum())
+          </code></pre>
+          <aside class="notes">
+            Show how data analysis can be automated with Python.
+          </aside>
+        </section>
+
+        <!-- Math Equation -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Return on Investment (ROI):</p>
+          <p>$$ ROI = \frac{Net\ Profit}{Investment} \times 100 $$</p>
+          <aside class="notes">
+            Define ROI and explain why it is a key performance metric.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        transition: 'fade', // smooth transitions
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
+
+
