@@ -1,102 +1,105 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Earnings Presentation - Atin Datta</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- RevealJS Core -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css">
+		<title>Q3 2025 Earnings Report</title>
 
-    <!-- Code Highlight Theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/sky.min.css" id="theme">
 
-        <!-- Title Slide -->
-        <section>
-          <h1>Quarterly Earnings Report</h1>
-          <p><strong>Prepared by:</strong> Atin Datta</p>
-          <p><strong>Email:</strong> 23f3001973@ds.study.iitm.ac.in</p>
-          <aside class="notes">
-            Welcome the audience. Mention your name, role, and that this is an interactive report.
-          </aside>
-        </section>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Quarterly Earnings Report</h1>
+					<h3>Q3 2025</h3>
+					<p>Technical Consultant: Gemini</p>
+					<p>
+						<small>Contact: <a href="mailto:23f3001973@ds.study.iitm.ac.in">23f3001973@ds.study.iitm.ac.in</a></small>
+					</p>
+					<aside class="notes">
+						Welcome everyone. This presentation covers our financial performance for the third quarter of 2025.
+					</aside>
+				</section>
 
-        <!-- Markdown Slide -->
-        <section data-markdown>
-          <textarea data-template>
-            ## 📊 Key Highlights
-            - Revenue growth: **15% YoY**
-            - Net Profit: **₹120 Cr**
-            - EPS: **₹25.4**
-          </textarea>
-          <aside class="notes">
-            Summarize the financial highlights concisely for a quick overview.
-          </aside>
-        </section>
+				<section data-markdown>
+					<textarea data-template>
+						## Agenda 📝
+						- Key Financial Highlights
+						- Growth Driver Analysis
+						- Strategic Initiatives Update
+						- Q4 Outlook & Guidance
+					</textarea>
+				</section>
 
-        <!-- Fragments for animation -->
-        <section>
-          <h2>Revenue Breakdown</h2>
-          <ul>
-            <li class="fragment">Retail Banking: 40%</li>
-            <li class="fragment">Corporate Banking: 35%</li>
-            <li class="fragment">Wealth Management: 25%</li>
-          </ul>
-          <aside class="notes">
-            Reveal each revenue segment step by step for clarity.
-          </aside>
-        </section>
+				<section>
+					<h2>Key Financial Highlights</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Revenue: **$1.2B** (+15% YoY)</li>
+						<li class="fragment" data-fragment-index="2">Net Profit: **$250M** (+22% YoY)</li>
+						<li class="fragment" data-fragment-index="3">Earnings Per Share (EPS): **$1.45** (+20% YoY)</li>
+						<li class="fragment" data-fragment-index="4">Strong performance driven by new market expansion.</li>
+					</ul>
+					<aside class="notes">
+						Walk through each key metric. Emphasize the strong year-over-year growth, which is our best in five quarters. The new market expansion in APAC was the primary driver.
+					</aside>
+				</section>
 
-        <!-- Code Highlighting -->
-        <section>
-          <h2>Python Analysis</h2>
-          <pre><code class="language-python">
-import pandas as pd
+				<section>
+					<h2>Financial Modeling Snippet</h2>
+					<p>Python script for ROI calculation:</p>
+					<pre><code class="language-python" data-line-numbers="1-5">
+def calculate_roi(net_profit, investment_cost):
+  """Calculates the Return on Investment (ROI)."""
+  if investment_cost == 0:
+    return 0
+  return (net_profit / investment_cost) * 100
+					</code></pre>
+					<aside class="notes">
+						This is a simplified function our data science team uses for preliminary project viability analysis. It ensures we maintain a standardized approach to calculating ROI across all departments.
+					</aside>
+				</section>
 
-data = {"Q1": [120], "Q2": [135], "Q3": [150], "Q4": [160]}
-df = pd.DataFrame(data)
-print("Annual Revenue:", df.sum().sum())
-          </code></pre>
-          <aside class="notes">
-            Show how data analysis can be automated with Python.
-          </aside>
-        </section>
+				<section>
+					<h2>Core Financial Formulas</h2>
+					<p>Our analysis is grounded in fundamental financial principles.</p>
+					<p class="fragment">
+						**Return on Investment (ROI):**
+						$$ ROI = \frac{{\text{Net Profit}}}{{\text{Cost of Investment}}} \times 100\% $$
+					</p>
+					<p class="fragment">
+						**Compound Annual Growth Rate (CAGR):**
+						$$ CAGR = \left( \frac{V_{\text{final}}}{V_{\text{start}}} \right)^{\frac{1}{t}} - 1 $$
+					</p>
+					<aside class="notes">
+						Here are two of the core formulas we use. The ROI formula was just shown in the Python code. The CAGR formula is what we use to project long-term growth.
+					</aside>
+				</section>
 
-        <!-- Math Equation -->
-        <section>
-          <h2>Financial Formula</h2>
-          <p>Return on Investment (ROI):</p>
-          <p>$$ ROI = \frac{Net\ Profit}{Investment} \times 100 $$</p>
-          <aside class="notes">
-            Define ROI and explain why it is a key performance metric.
-          </aside>
-        </section>
+				<section>
+					<h2>Thank You</h2>
+					<h3>Q&A Session</h3>
+				</section>
+			</div>
+		</div>
 
-      </div>
-    </div>
-
-    <!-- RevealJS Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
-
-    <script>
-      Reveal.initialize({
-        hash: true,
-        slideNumber: true,
-        transition: 'fade', // smooth transitions
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
-      });
-    </script>
-  </body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/math/math.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
 </html>
-
-
