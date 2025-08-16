@@ -1,105 +1,420 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Q4 2024 Earnings Report - 23f3001973@ds.study.iitm.ac.in</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
+    
+    <style>
+        .reveal .slides section .fragment.highlight-current-blue {
+            opacity: 1;
+            visibility: inherit;
+        }
+        .reveal .slides section .fragment.highlight-current-blue.current-fragment {
+            color: #1b91ff;
+        }
+        .financial-highlight {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .code-container {
+            background: #2d3748;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .email-tag {
+            font-size: 0.8em;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide -->
+            <section>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p class="email-tag">23f3001973@ds.study.iitm.ac.in</p>
+                <p>
+                    <small>Quarterly Stakeholder Presentation</small><br>
+                    <small>Technical Analysis & Market Insights</small>
+                </p>
+                <aside class="notes">
+                    Welcome stakeholders to our Q4 2024 earnings presentation. This comprehensive review will cover our financial performance, key metrics, and strategic initiatives for the upcoming fiscal year.
+                </aside>
+            </section>
 
-		<title>Q3 2025 Earnings Report</title>
+            <!-- Executive Summary -->
+            <section>
+                <h2>Executive Summary</h2>
+                <div class="financial-highlight">
+                    <h3>Key Highlights</h3>
+                    <ul>
+                        <li class="fragment fade-in-then-semi-out">Revenue Growth: 15.3% YoY</li>
+                        <li class="fragment fade-in-then-semi-out">Net Income: $2.4B (+12.8%)</li>
+                        <li class="fragment fade-in-then-semi-out">Digital Transformation ROI: 23%</li>
+                        <li class="fragment highlight-current-blue">Market Cap: $45.7B</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our Q4 performance exceeded expectations across all major metrics. The 15.3% revenue growth demonstrates strong market positioning, while our digital transformation investments are delivering significant returns.
+                </aside>
+            </section>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/sky.min.css" id="theme">
+            <!-- Financial Metrics in Markdown -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Financial Performance Metrics
+                    
+                    ### Revenue Breakdown by Segment
+                    
+                    | Business Unit | Q4 2024 | Q4 2023 | Growth |
+                    |---------------|---------|---------|---------|
+                    | **Commercial Banking** | $8.2B | $7.1B | +15.5% |
+                    | **Investment Services** | $4.7B | $4.0B | +17.5% |
+                    | **Digital Solutions** | $2.1B | $1.4B | +50.0% |
+                    | **Wealth Management** | $1.8B | $1.6B | +12.5% |
+                    
+                    > *"Our diversified portfolio continues to drive sustainable growth across all market conditions."*
+                    
+                    Note: All figures in USD billions
+                </textarea>
+                <aside class="notes">
+                    Notice the exceptional 50% growth in Digital Solutions - this reflects our strategic investment in fintech capabilities and API-first architecture that's attracting enterprise clients.
+                </aside>
+            </section>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/monokai.min.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Quarterly Earnings Report</h1>
-					<h3>Q3 2025</h3>
-					<p>Technical Consultant: Gemini</p>
-					<p>
-						<small>Contact: <a href="mailto:23f3001973@ds.study.iitm.ac.in">23f3001973@ds.study.iitm.ac.in</a></small>
-					</p>
-					<aside class="notes">
-						Welcome everyone. This presentation covers our financial performance for the third quarter of 2025.
-					</aside>
-				</section>
+            <!-- Technical Implementation -->
+            <section>
+                <h2>Technology Infrastructure</h2>
+                <div class="code-container">
+                    <h4>Risk Calculation Engine</h4>
+                    <pre><code class="python" data-trim data-noescape>
+def calculate_var(portfolio_returns, confidence_level=0.95):
+    """
+    Calculate Value at Risk using historical simulation
+    
+    Args:
+        portfolio_returns: numpy array of historical returns
+        confidence_level: confidence level for VaR calculation
+    
+    Returns:
+        float: Value at Risk as percentage
+    """
+    import numpy as np
+    
+    # Sort returns in ascending order
+    sorted_returns = np.sort(portfolio_returns)
+    
+    # Calculate index for given confidence level
+    index = int((1 - confidence_level) * len(sorted_returns))
+    
+    # Return VaR
+    var = abs(sorted_returns[index])
+    
+    return var * 100  # Convert to percentage
 
-				<section data-markdown>
-					<textarea data-template>
-						## Agenda 📝
-						- Key Financial Highlights
-						- Growth Driver Analysis
-						- Strategic Initiatives Update
-						- Q4 Outlook & Guidance
-					</textarea>
-				</section>
+# Example usage
+portfolio_var = calculate_var(daily_returns, 0.99)
+print(f"99% VaR: {portfolio_var:.2f}%")
+                    </code></pre>
+                </div>
+                <aside class="notes">
+                    Our new risk calculation engine processes over 10 million transactions daily with sub-second latency. This Python implementation shows our core VaR calculation that's now deployed across all trading desks.
+                </aside>
+            </section>
 
-				<section>
-					<h2>Key Financial Highlights</h2>
-					<ul>
-						<li class="fragment" data-fragment-index="1">Revenue: **$1.2B** (+15% YoY)</li>
-						<li class="fragment" data-fragment-index="2">Net Profit: **$250M** (+22% YoY)</li>
-						<li class="fragment" data-fragment-index="3">Earnings Per Share (EPS): **$1.45** (+20% YoY)</li>
-						<li class="fragment" data-fragment-index="4">Strong performance driven by new market expansion.</li>
-					</ul>
-					<aside class="notes">
-						Walk through each key metric. Emphasize the strong year-over-year growth, which is our best in five quarters. The new market expansion in APAC was the primary driver.
-					</aside>
-				</section>
+            <!-- Mathematical Models -->
+            <section>
+                <h2>Financial Mathematics</h2>
+                <div class="fragment fade-up">
+                    <h4>Black-Scholes Option Pricing Model</h4>
+                    <p>$$C = S_0 N(d_1) - K e^{-rT} N(d_2)$$</p>
+                    <p>where:</p>
+                    <p>$$d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}$$</p>
+                    <p>$$d_2 = d_1 - \sigma\sqrt{T}$$</p>
+                </div>
+                
+                <div class="fragment fade-up">
+                    <h4>Portfolio Return Calculation</h4>
+                    <p>$$R_p = \sum_{i=1}^{n} w_i R_i$$</p>
+                    <p><small>Portfolio risk: $\sigma_p = \sqrt{\sum_{i=1}^{n} \sum_{j=1}^{n} w_i w_j \sigma_{ij}}$</small></p>
+                </div>
+                <aside class="notes">
+                    These mathematical models form the foundation of our derivatives pricing and portfolio optimization algorithms. Our quantitative team has enhanced the traditional Black-Scholes model with machine learning corrections for improved accuracy.
+                </aside>
+            </section>
 
-				<section>
-					<h2>Financial Modeling Snippet</h2>
-					<p>Python script for ROI calculation:</p>
-					<pre><code class="language-python" data-line-numbers="1-5">
-def calculate_roi(net_profit, investment_cost):
-  """Calculates the Return on Investment (ROI)."""
-  if investment_cost == 0:
-    return 0
-  return (net_profit / investment_cost) * 100
-					</code></pre>
-					<aside class="notes">
-						This is a simplified function our data science team uses for preliminary project viability analysis. It ensures we maintain a standardized approach to calculating ROI across all departments.
-					</aside>
-				</section>
+            <!-- Market Analysis -->
+            <section>
+                <h2>Market Position Analysis</h2>
+                <div class="fragment fade-right">
+                    <div class="metric-card">
+                        <h4>Market Share</h4>
+                        <p><strong>Commercial Lending:</strong> 12.3% (+0.8%)</p>
+                        <p><strong>Digital Banking:</strong> 8.7% (+2.1%)</p>
+                    </div>
+                </div>
+                
+                <div class="fragment fade-left">
+                    <div class="metric-card">
+                        <h4>Customer Metrics</h4>
+                        <p><strong>Active Users:</strong> 14.2M (+18%)</p>
+                        <p><strong>Customer Satisfaction:</strong> 4.7/5.0</p>
+                    </div>
+                </div>
+                
+                <div class="fragment fade-up">
+                    <div class="metric-card">
+                        <h4>Operational Efficiency</h4>
+                        <p><strong>Cost-to-Income Ratio:</strong> 52.3% (-3.2%)</p>
+                        <p><strong>ROE:</strong> 16.8% (+1.4%)</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our market position has strengthened significantly, particularly in digital banking where we've gained 2.1% market share. The improved cost-to-income ratio reflects our automation initiatives and operational streamlining.
+                </aside>
+            </section>
 
-				<section>
-					<h2>Core Financial Formulas</h2>
-					<p>Our analysis is grounded in fundamental financial principles.</p>
-					<p class="fragment">
-						**Return on Investment (ROI):**
-						$$ ROI = \frac{{\text{Net Profit}}}{{\text{Cost of Investment}}} \times 100\% $$
-					</p>
-					<p class="fragment">
-						**Compound Annual Growth Rate (CAGR):**
-						$$ CAGR = \left( \frac{V_{\text{final}}}{V_{\text{start}}} \right)^{\frac{1}{t}} - 1 $$
-					</p>
-					<aside class="notes">
-						Here are two of the core formulas we use. The ROI formula was just shown in the Python code. The CAGR formula is what we use to project long-term growth.
-					</aside>
-				</section>
+            <!-- Database Architecture -->
+            <section>
+                <h2>Data Infrastructure</h2>
+                <div class="code-container">
+                    <h4>Real-time Transaction Processing</h4>
+                    <pre><code class="sql" data-trim>
+-- High-frequency trading data pipeline
+CREATE TABLE trading_positions (
+    position_id BIGINT PRIMARY KEY,
+    account_id VARCHAR(20) NOT NULL,
+    symbol VARCHAR(10) NOT NULL,
+    quantity DECIMAL(18,8) NOT NULL,
+    entry_price DECIMAL(18,4) NOT NULL,
+    current_price DECIMAL(18,4) NOT NULL,
+    pnl AS (quantity * (current_price - entry_price)),
+    timestamp_utc TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    INDEX idx_account_symbol (account_id, symbol),
+    INDEX idx_timestamp (timestamp_utc)
+);
 
-				<section>
-					<h2>Thank You</h2>
-					<h3>Q&A Session</h3>
-				</section>
-			</div>
-		</div>
+-- Real-time P&L calculation
+SELECT 
+    account_id,
+    SUM(pnl) as total_pnl,
+    COUNT(*) as position_count
+FROM trading_positions 
+WHERE timestamp_utc >= DATE_SUB(NOW(), INTERVAL 1 DAY)
+GROUP BY account_id
+ORDER BY total_pnl DESC;
+                    </code></pre>
+                </div>
+                <aside class="notes">
+                    Our new database architecture handles 500,000+ transactions per second with 99.99% uptime. This SQL example shows our position tracking system that provides real-time P&L calculations across all trading accounts.
+                </aside>
+            </section>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/math/math.min.js"></script>
-		<script>
-			// More info about initialization & config:
-			// https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-			});
-		</script>
-	</body>
-</html>
+            <!-- Risk Management -->
+            <section>
+                <h2>Risk Management Framework</h2>
+                <div class="fragment fade-in">
+                    <h4>Credit Risk Assessment</h4>
+                    <p>Default Probability Model:</p>
+                    <p>$$PD = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n)}}$$</p>
+                </div>
+                
+                <div class="fragment fade-in">
+                    <h4>Key Risk Metrics</h4>
+                    <ul>
+                        <li class="fragment highlight-current-blue">Tier 1 Capital Ratio: 14.2%</li>
+                        <li class="fragment highlight-current-blue">Credit Loss Provision: $180M</li>
+                        <li class="fragment highlight-current-blue">Liquidity Coverage Ratio: 125%</li>
+                        <li class="fragment highlight-current-blue">Net Stable Funding Ratio: 118%</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our risk management has been enhanced with machine learning models that improve prediction accuracy by 23%. All regulatory ratios exceed minimum requirements with comfortable buffers.
+                </aside>
+            </section>
+
+            <!-- API Integration -->
+            <section>
+                <h2>Digital Platform Integration</h2>
+                <div class="code-container">
+                    <h4>RESTful API Implementation</h4>
+                    <pre><code class="javascript" data-trim>
+// Account balance API endpoint
+const express = require('express');
+const app = express();
+
+app.get('/api/v2/accounts/:accountId/balance', async (req, res) => {
+    try {
+        const { accountId } = req.params;
+        
+        // Validate account access
+        const hasAccess = await validateAccountAccess(
+            req.user.id, 
+            accountId
+        );
+        
+        if (!hasAccess) {
+            return res.status(403).json({
+                error: 'ACCESS_DENIED',
+                message: 'Insufficient permissions'
+            });
+        }
+        
+        // Fetch real-time balance
+        const balance = await getAccountBalance(accountId);
+        const transactions = await getRecentTransactions(accountId, 10);
+        
+        res.json({
+            account_id: accountId,
+            balance: {
+                available: balance.available,
+                pending: balance.pending,
+                total: balance.total
+            },
+            currency: balance.currency,
+            last_updated: new Date().toISOString(),
+            recent_transactions: transactions
+        });
+        
+    } catch (error) {
+        res.status(500).json({
+            error: 'INTERNAL_ERROR',
+            message: 'Balance retrieval failed'
+        });
+    }
+});
+                    </code></pre>
+                </div>
+                <aside class="notes">
+                    Our API platform now serves 50+ fintech partners with 99.9% uptime. This JavaScript example shows our secure account balance endpoint that processes 2 million requests daily.
+                </aside>
+            </section>
+
+            <!-- Future Outlook -->
+            <section>
+                <h2>Strategic Initiatives 2025</h2>
+                <div class="fragment fade-right">
+                    <h4>🚀 Technology Investments</h4>
+                    <ul>
+                        <li>AI-powered fraud detection ($50M)</li>
+                        <li>Quantum computing research ($25M)</li>
+                        <li>Blockchain infrastructure ($30M)</li>
+                    </ul>
+                </div>
+                
+                <div class="fragment fade-left">
+                    <h4>📈 Market Expansion</h4>
+                    <ul>
+                        <li>Southeast Asian markets entry</li>
+                        <li>SMB lending platform launch</li>
+                        <li>Green finance initiatives</li>
+                    </ul>
+                </div>
+                
+                <div class="fragment fade-up">
+                    <h4>🎯 Performance Targets</h4>
+                    <ul>
+                        <li>Revenue growth: 18-20%</li>
+                        <li>ROE target: >17%</li>
+                        <li>Cost reduction: 5%</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our 2025 strategy focuses on technology leadership and market expansion. The $105M technology investment represents our commitment to staying ahead of industry trends, particularly in AI and quantum computing applications.
+                </aside>
+            </section>
+
+            <!-- Q&A -->
+            <section>
+                <h1>Questions & Discussion</h1>
+                <div class="financial-highlight">
+                    <h3>Thank you for your attention</h3>
+                    <p class="email-tag">Contact: 23f3001973@ds.study.iitm.ac.in</p>
+                    <p>
+                        <small>Financial Performance Team</small><br>
+                        <small>Technical Consulting Division</small>
+                    </p>
+                </div>
+                <p class="fragment fade-in">
+                    <small>Investor Relations: ir@company.com | +1-555-FINANCE</small>
+                </p>
+                <aside class="notes">
+                    Open the floor for questions. Key topics likely to be discussed: digital transformation ROI, market expansion timeline, regulatory compliance, and technology investment priorities.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            
+            // Enable speaker notes
+            showNotes: false,
+            
+            // Math plugin configuration
+            math: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml-full.min.js',
+                config: 'TeX-AMS_HTML-full'
+            },
+            
+            plugins: [ 
+                RevealMarkdown, 
+                RevealHighlight, 
+                RevealNotes,
+                RevealMath
+            ]
+        });
+
+        // Custom navigation hints
+        Reveal.addEventListener('ready', function(event) {
+            console.log('Presentation ready - Press "S" for speaker notes');
+        });
+
+        // Custom fragment animations
+        Reveal.addEventListener('fragmentshown', function(event) {
+            if (event.fragment.classList.contains('highlight-current-blue')) {
+                event.fragment.style.transform = 'scale(1.05)';
+                event.fragment.style.transition = 'all 0.3s ease';
+            }
+        });
+
+        Reveal.addEventListener('fragmenthidden', function(event) {
+            if (event.fragment.classList.contains('highlight-current-blue')) {
+                event.fragment.style.transform = 'scale(1)';
+            }
+        });
+    </script>
+</body>
+		</html>
